@@ -400,12 +400,17 @@ footer {
 }
 
 footer ul {
-    text-align: left;
+    text-align: center;
     margin-top: 20px;
 }
 
+.red {
+    text-align: left;
+}
+
+
 footer ul li {
-    padding: 5px;
+    padding: 1px;
 }
 
 footer li a {
@@ -584,6 +589,28 @@ footer img {
     border: rgb(204, 146, 81) 2px solid;
     background-color: antiquewhite;
     color: rgb(215, 120, 24);
+}
+
+.invisible{
+    background-image: url(../assets/img/dor1_hover.jpg);
+    opacity: 0;
+}
+
+.invi{
+width: 100%;
+height: 100%;
+}
+
+.invi img:last-child {
+display: none; 
+}
+
+.invi:hover img:last-child {
+display: block;
+}
+
+.invi:hover img:first-child {
+display: none;
 }
 
 
