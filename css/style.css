@@ -521,22 +521,31 @@ footer img {
 
 /* ########## PRODUCTOS ############# */
 
+.imagen_deco{
+    height: 300px;
+    background-image: url(../assets/img/sli4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
 .seccion_productos {
-    background-color: rgb(207, 185, 149);
+    background-color: white;
     padding-bottom: 30px;
 }
 
 .seccion_productos h2 {
     font-family: pacifico, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    ;
-    color: white;
-    font-size: 4rem;
+    color: black;
+    font-size: 2rem;
     padding: 20px;
     text-align: center;
 }
 
 .seccion_productos_articulos {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -575,6 +584,38 @@ footer img {
     border: rgb(204, 146, 81) 2px solid;
     background-color: antiquewhite;
     color: rgb(215, 120, 24);
+}
+
+
+/* banner tarjeta de credito */
+
+.banner_tarjeta {
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.credito {
+    animation-name: medio;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.tarjeta_banner {
+    padding: 10px;
+}
+
+.tarjeta_banner p {
+    text-align: center;
+}
+
+@keyframes medio {
+    0% {transform: translateX(400%);}
+    33% {transform: translateX(0%);}
+    66% {transform: translateX(0%);}
+    100% {transform: translateX(-400%);}
 }
 
 
