@@ -589,6 +589,7 @@ footer img {
 @media (min-width: 768px){
 
     .main-productos {
+        margin-bottom: 10px;
         display: grid;
         grid-template-columns: 65% auto;
         grid-template-rows: repeat(3,auto);
