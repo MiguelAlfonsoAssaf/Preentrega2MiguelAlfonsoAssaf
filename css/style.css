@@ -36,7 +36,7 @@ input {
 .header {
     /* COLOR FONDO HEADER */
     /* background-color: whitesmoke; */
-    background: linear-gradient(0deg, rgba(255,255,255,1) 37%, rgba(214,214,214,1) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 37%, rgba(214, 214, 214, 1) 100%);
     padding: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(121, 75, 15);
@@ -101,7 +101,7 @@ input {
 
 /* ESTILO MAIN */
 
-.decorativa{
+.decorativa {
     grid-area: deco;
 }
 
@@ -138,9 +138,9 @@ input {
     width: 100%;
     text-align: center;
     color: white;
-    background-color: black; 
+    background-color: black;
     font-family: Lucida Sans;
-    
+
     float: left;
     opacity: 0;
     position: absolute;
@@ -237,11 +237,11 @@ input {
 
 @media (min-width: 768px) {
     .ultimos_productos {
-        background: linear-gradient(0deg, rgba(255,255,255,1) 36%, rgb(209, 167, 99) 75%, rgb(209, 167, 99) 100%);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 1) 36%, rgb(209, 167, 99) 75%, rgb(209, 167, 99) 100%);
     }
 }
 
-.contenedor_tarjeta_img{
+.contenedor_tarjeta_img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -269,12 +269,12 @@ input {
     padding: 5px;
 }
 
-.tarjeta_img img{
-    object-fit:contain;
+.tarjeta_img img {
+    object-fit: contain;
     border-radius: 20px;
 }
 
-.tarjeta_img img:hover{
+.tarjeta_img img:hover {
     transform: scale(1.4);
     transition: all 1s ease;
 }
@@ -297,7 +297,7 @@ input {
 }
 
 
-.sli h2{
+.sli h2 {
     background-color: #EFEFEF;
     text-align: center;
     padding: 4px;
@@ -307,12 +307,12 @@ input {
     /* border: 2px solid green; */
     width: 300%;
     height: 100%;
-    
+
     display: flex;
 
     animation: slide-hero 20s infinite;
 
-    
+
 }
 
 .sli li {
@@ -322,38 +322,64 @@ input {
     height: 100%;
 }
 
-.sli li img{
+.sli li img {
     width: 100%;
     height: 100%;
-    object-fit:cover;
+    object-fit: cover;
 }
 
-@keyframes slide-hero{
-    0%{margin-left: 0%;}
-    20%{margin-left: 0%;}
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-    75%{margin-left: 0%;}
-    100%{margin-left: 0%;}
+@keyframes slide-hero {
+    0% {
+        margin-left: 0%;
+    }
+
+    20% {
+        margin-left: 0%;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: 0%;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
 }
 
 
- @media (min-width: 768px) /*and (max-width: 1200px) */{ 
+@media (min-width: 768px)
 
-    .main-index{
+/*and (max-width: 1200px) */
+    {
+
+    .main-index {
         display: grid;
-        grid-template-columns: repeat(4,24%);
-        grid-template-rows: repeat(3,auto);
+        grid-template-columns: repeat(4, 24%);
+        grid-template-rows: repeat(3, auto);
 
-        grid-template-areas: 
-        "deco deco deco disenio "
-        "prod prod prod disenio"
-        "taller taller taller disenio";
+        grid-template-areas:
+            "deco deco deco disenio "
+            "prod prod prod disenio"
+            "taller taller taller disenio";
         gap: 10px 10px;
         margin: 5px;
-        
+
     }
 
 
@@ -369,13 +395,13 @@ input {
         border-radius: 20px 20px 0 0;
     }
 
-.main-index section{
-    border-radius: 20px;
-}
+    .main-index section {
+        border-radius: 20px;
+    }
 
-.main-index section h2{
-    border-radius: 20px 20px 0 0 ;
-}
+    .main-index section h2 {
+        border-radius: 20px 20px 0 0;
+    }
 
 
 }
@@ -390,7 +416,7 @@ input {
 footer {
     /* height: 200px; */
     /* FONDO COLOR FOOTER */
-    background: linear-gradient(0deg, rgba(214,214,214,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgba(214, 214, 214, 1) 0%, rgba(255, 255, 255, 1) 100%);
     /* background-color: #EFEFEF; */
     display: flex;
     flex-wrap: wrap;
@@ -440,6 +466,9 @@ footer img {
 }
 
 
+
+
+/* ################## CSS DE LAS OTRAS PAGINAS ############ */
 /*########## ¿ QUIENES  SOMOS ? ################ */
 
 .quienes_somos {
@@ -526,7 +555,7 @@ footer img {
 
 /* ########## PRODUCTOS ############# */
 
-.imagen_deco{
+.imagen_deco {
     height: 300px;
     background-image: url(../assets/img/sli4.jpg);
     background-repeat: no-repeat;
@@ -537,7 +566,46 @@ footer img {
 
 .seccion_productos {
     background-color: white;
-    padding-bottom: 30px;
+    height: auto;
+}
+
+.area-banner{
+    grid-area: ban;
+}
+
+.area-zapatos{
+    grid-area: zap;
+}
+
+.area-mocasines{
+    grid-area: moc;
+}
+.area-caperas{
+    grid-area: camp;
+}
+
+
+
+@media (min-width: 768px){
+
+    .main-productos {
+        display: grid;
+        grid-template-columns: 65% auto;
+        grid-template-rows: repeat(3,auto);
+        gap: 5px 5px;
+
+        grid-template-areas:
+            "moc moc moc camp "
+            "ban ban ban camp"
+            "zap zap zap camp";
+        gap: 10px 10px;
+        
+    }
+
+.banner_tarjeta{
+    margin: 0;
+}
+
 }
 
 .seccion_productos h2 {
@@ -555,8 +623,10 @@ footer img {
 }
 
 .tarjeta_zapato {
-    width: 250px;
-    height: 350px;
+    /* width: 250px;
+    height: 350px; */
+    width: 230px;
+    height: 330px;
     border: 2px none black;
     border-radius: 20px;
     background-color: rgb(223, 223, 223);
@@ -591,40 +661,43 @@ footer img {
     color: rgb(215, 120, 24);
 }
 
-.invisible{
+.invisible {
     background-image: url(../assets/img/dor1_hover.jpg);
     opacity: 0;
 }
 
-.invi{
-width: 100%;
-height: 100%;
+.invi {
+    width: 100%;
+    height: 100%;
 }
 
 .invi img:last-child {
-display: none; 
+    display: none;
 }
 
 .invi:hover img:last-child {
-display: block;
+    display: block;
 }
 
 .invi:hover img:first-child {
-display: none;
+    display: none;
 }
 
 
 /* banner tarjeta de credito */
 
 .banner_tarjeta {
+    height: 100px;
+    margin: 10px;
     background-color: whitesmoke;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .credito {
-    animation-name: medio;
+    animation-name: posicion-medio;
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -638,11 +711,22 @@ display: none;
     text-align: center;
 }
 
-@keyframes medio {
-    0% {transform: translateX(400%);}
-    33% {transform: translateX(0%);}
-    66% {transform: translateX(0%);}
-    100% {transform: translateX(-400%);}
+@keyframes posicion-medio {
+    0% {
+        transform: translateX(400%);
+    }
+
+    33% {
+        transform: translateX(0%);
+    }
+
+    66% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-400%);
+    }
 }
 
 
@@ -712,5 +796,3 @@ input[type=reset]:hover {
 input[type=submit]:hover {
     background-color: rgb(202, 202, 202);
 }
-
-
